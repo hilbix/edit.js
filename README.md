@@ -17,10 +17,12 @@ In case I find some other quick function I need, I will add it.
 
 WTF why?
 
-- `kate` has no way to remove trailing spaces (there is only some default for this on save, but this probably is the most stupid implementation ever).
-- Hence I started this here, to quickly implement such a beast, as I quite often need to remove traling spaces from some text in the clipboard.
-- Because AFAICS the world has gone mad.  All presentations about COVID-19 are not done for a normal being.
-- Hence I had to do it myself.  Sigh.
+- AFAICS the world has gone completely mad:
+- For example `kate` has no way to remove trailing spaces (there is only some default for this on save, but this probably is the most stupid implementation ever).
+- But I need such a beast nearly everywhere, as I quite often need to remove trailing spaces from some text in a clipboard.
+- `sed` cannot help if the trailing spaces stem from the copy operaton of `sed`'s output to the clipboard.
+- Also I do not want to lift some heavy editors (IntelliJ?) just to kick some spaces.
+- Also this works on my smartphone, too.  (Well, Chrome browser.)
 
 Contact? Bug?
 
