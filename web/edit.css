@@ -1,0 +1,15 @@
+*			{ margin:0; padding:0; background:black; color:white }
+
+#top			{ max-height:2em; overflow:scroll-vertical }
+
+#wh			{ position:absolute; bottom:0; right:0 }
+#imprint 		{ position:fixed; top:0; right:0 }
+#imprint a		{ text-decoration:none; background:#008 }
+#imprint a:hover	{ text-decoration:underline }
+
+#err			{ position:absolute; bottom:0; right:0; opacity:0.3; color:white; z-index:100; border:1px solid blue }
+#err pre		{ background:#400 }
+#err:hover		{ opacity:1 }
+
+#edit			{ position:absolute; left:0; right:0; top:2em; bottom:0; width:100%; height:auto; border:0; white-space:nowrap; overflow:auto }
+
