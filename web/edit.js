@@ -4,11 +4,29 @@
 
 DomReady.then(_ => new Edit().main());
 
+const tools =
+  {
+    untab(s)
+      {
+        const tabs = s.split('\t');
+        for (let i=tabs.length-1; --i>=0; )
+          tabs[i] += '        '.substr(tabs[i].length % 8);
+        return tabs.join('');
+      }
+  };
 const fns =
   {
     removeTrailingSpaces(s)
       {
         return s.split('\n').map(_ => _.replace(/\s+$/, ''));
+      },
+    replaceTabWithSpace(s)
+      {
+        return s.split('\n').map(_ => tools.untab(_));
+      },
+    removeMultipleSpaces(s)
+      {
+        return s.replace(/\s\s+/g,' ');
       }
   };
 
